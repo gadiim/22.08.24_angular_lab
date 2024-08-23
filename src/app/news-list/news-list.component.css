@@ -1,0 +1,42 @@
+* {
+    font-family: Georgia, serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    object-fit: contain;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 75px;
+    text-align: center;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+
+.news-template h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.news-template div,
+.news-template p {
+    text-align: justify;
+}
+
+.news-template div:first-of-type,
+.news-template div:last-of-type {
+    text-align: right;
+} 
+

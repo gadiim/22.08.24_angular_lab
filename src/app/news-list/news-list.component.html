@@ -1,0 +1,14 @@
+<div class="name">Publick Occurrences</div>
+<hr>
+<div class="news-container">
+    <div *ngFor="let item of news" class="news-template">
+        <h2>{{item.headline | uppercase}}</h2>
+        <div>{{item.publicationDate | date:"long"}}</div>
+        <p><small><i>{{item.description}}</i></small></p>
+        <img [src]='item.image' alt="{{ item.title }}">
+        <div><small><i>{{item.title}}</i></small></div>
+        <hr>
+        <p>{{item.body}}</p>       
+    </div>
+</div>
+<hr>

@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
-import { NEWS } from './mock-news';
+import { TASKS } from './mock-task';
 
 @Injectable({
   providedIn: 'root'
 })
-export class NewsService {
+export class TaskService {
 
   constructor() { }
-  getNews() {
-    return NEWS;
+
+  getTasks(){
+    return TASKS;
   }
 }
