@@ -18,6 +18,11 @@ p {
 .name {
     font-size: 75px;
     text-align: center;
+    margin-bottom: 5px;
+}
+
+.motto {
+    text-align: center;
 }
 
 .news-container {
