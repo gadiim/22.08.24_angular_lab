@@ -3,7 +3,12 @@ img {
     object-fit:contain;
     width: 300px;
     height: 300px;
-    overflow: hidden;
+    margin-left: 15px;
+}
+
+table {
+    width: 100%;
+    margin-left: 15px;
 }
 
 td {
@@ -23,16 +28,44 @@ button:hover {
     color: white;
     border-color: white;
 }
+
 .products-wrapper {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .product-container {
+    display: block;
     text-align: center;
     width: 30%;
     margin: 5px;
     padding: 5px;
-    box-shadow: 0 0 10px 2px gray;
+    box-shadow: 0 0 10px 2px lightgray;
+    transition: transform 0.3s ease;
 }
 
+.product-container:hover {
+    transform: scale(1.03);
+    z-index: 1;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: tomato;
+    color: white;
+    width: 20%;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+  }
