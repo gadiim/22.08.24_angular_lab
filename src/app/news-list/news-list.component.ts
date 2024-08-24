@@ -12,7 +12,7 @@ import { UpperCasePipe, DatePipe, NgFor } from '@angular/common';
 })
 export class NewsListComponent {
   news = NEWS;
-  constructor(private newsService: NewsService) {}
+  constructor(private newsService: NewsService) { }
   ngOnInit() {
     this.news = this.newsService.getNews()
   }

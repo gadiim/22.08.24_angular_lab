@@ -1,0 +1,29 @@
+<div class="products-wrapper">
+    <div *ngFor="let item of appliances" class="product-container">
+        <div><b>{{ item.model | uppercase }}</b></div>
+        <hr>
+        <img [src]="item.image || 'default-image.png'" alt="{{ item.model }}">
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>Producer:</td>
+                    <td>{{ item.producter }}</td>
+                </tr>
+                <tr>
+                    <td>Price:</td>
+                    <td>{{ item.price | currency }}</td>
+                </tr>
+                <tr>
+                    <td>Discount:</td>
+                    <td>{{ item.discount | percent }}</td>
+                </tr>
+                <tr>
+                    <td>Final price:</td>
+                    <td><b>{{ (item.price - item.price * item.discount) | currency }}</b></td>
+                </tr>
+            </tbody>
+        </table>
+        <button><b>BUY</b></button>
+    </div>
+</div>

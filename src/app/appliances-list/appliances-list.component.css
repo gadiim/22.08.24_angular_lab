@@ -1,0 +1,38 @@
+img {
+    display: block;
+    object-fit:contain;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+td {
+    width: 15rem;
+    text-align: left;
+    padding: 5px;
+}
+
+button {
+    width: 80%;
+    height: 2rem;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: darkcyan;
+    color: white;
+    border-color: white;
+}
+.products-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-container {
+    text-align: center;
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 0 0 10px 2px gray;
+}
+

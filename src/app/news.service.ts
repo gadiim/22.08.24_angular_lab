@@ -8,6 +8,6 @@ export class NewsService {
 
   constructor() { }
   getNews() {
-    return NEWS;
+    return NEWS; 
   }
 }
