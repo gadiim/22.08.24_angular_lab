@@ -27,6 +27,10 @@
                       </td>
                 </tr>
                 <tr>
+                    <td>discount: </td>
+                    <td>{{ item.discount | percent }}</td>
+                </tr>
+                <tr>
                     <td>final price: </td>
                     <td><b>{{ (item.price - item.price * item.discount) | currency }}</b></td>
                 </tr>
